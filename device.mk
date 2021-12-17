@@ -262,6 +262,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fix_baseband.sh \
     fstab.qcom \
     init.class_main.sh \
     init.oppo.face.rc \

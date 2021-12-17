@@ -1,8 +1,13 @@
 allow system_server hal_light_default:process signal;
 allow system_server app_zygote:process { getpgid };
 
+
 # power
 allow system_server sysfs_battery_supply:file { read open getattr };
 
 # Smart charging
 allow system_server sysfs_battery_supply:file { getattr open write };
+
+allow system_app baseband_prop:file { read };
+get_prop(system_server, baseband_prop)
+

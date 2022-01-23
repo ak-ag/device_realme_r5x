@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_r5x.mk
+    $(LOCAL_DIR)/cafex_r5x.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_r5x-user \
-    xtended_r5x-userdebug \
-    xtended_r5x-eng
+    cafex_r5x-user \
+    cafex_r5x-userdebug \
+    cafex_r5x-eng

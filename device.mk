@@ -511,7 +511,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0
 
 #PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 PRODUCT_PACKAGES += \
     android.frameworks.automotive.display@1.0.vendor \

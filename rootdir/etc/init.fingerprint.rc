@@ -1,0 +1,13 @@
+service fingerprint_script /system/bin/init.fingerprint.sh
+    class main
+    user root
+    oneshot
+
+on property:ro.fp.5i=0
+
+    restart vendor.oppo.hardware.biometrics.fingerprint@2.1
+    
+on property:ro.fp.5i=1
+    mount none /vendor/fptmp/android.hardware.biometrics.fingerprint@2.1-service.r5x /vendor/bin/hw/ bind
+    mount none /vendor/fptmp/libets_teeclient_v2.so /vendor/lib64/hw/ bind
+    restart vendor.oppo.hardware.biometrics.fingerprint@2.1
